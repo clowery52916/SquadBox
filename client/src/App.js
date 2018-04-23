@@ -38,7 +38,7 @@ class App extends Component {
       <div>
         <AppBar
           className='app-bar'
-          title='CAMERIA'
+          title='SquadBox'
           onLeftIconButtonClick={() => this.toggleDrawerMenu()}
           zDepth={2}
         />
