@@ -59,21 +59,6 @@ class LandingPage extends Component {
                             </CardActions>
                         </Card>
                     </Col>
-                    <Col xs={12} md={3} style={{ 'textAlign': 'center' }}>
-                        <Card>
-                            <CardMedia
-                            >
-                                <img className='landingImage' src={galleryImg} alt="gallery-face" />
-                            </CardMedia>
-                            <CardTitle title="Face Gallery" />
-                            <CardText>
-                                Deprecated for now due to API call limit
-                            </CardText>
-                            <CardActions>
-                                <FlatButton className='flat-btn' label="GALLERY" />
-                            </CardActions>
-                        </Card>
-                    </Col>
                 </Row>
             </Grid>
         );
