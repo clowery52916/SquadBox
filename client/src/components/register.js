@@ -62,7 +62,7 @@ class Register extends Component {
         const imageSrc = this.webcam.getScreenshot();
 
         axios.post(`https://api.kairos.com/enroll`, {
-            gallery_name: 'newCameriaGallery',
+            gallery_name: 'allUsers',
             image: imageSrc,
             subject_id: this.state.username
         }, {
@@ -86,7 +86,7 @@ class Register extends Component {
         });
 
         axios.post(`https://api.kairos.com/gallery/remove`, {
-            gallery_name: "newCameriaGallery"
+            gallery_name: "allUsers"
         }, {
                 headers: {
                     app_id: 'e70fee1f',
