@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import '../styles/register.css';
 import SemanticGrid from './SemanticGrid'
 import styled from 'styled-components'
-// images being used
-import detectImg from '../assets/images/detect-img.jpg';
-import registerImg from '../assets/images/register-img.jpg';
-import galleryImg from '../assets/images/gallery-img.jpg';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 

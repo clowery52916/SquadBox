@@ -13,13 +13,6 @@ import LandingPage from './components/landing-page';
 import Recognize from './components/recognize';
 import Register from './components/register';
 
-const NavBar = styled.div`
-  background-color: rgb(161, 214, 188);,
-  AppBar{
-    background-color:black;
-  }
-`
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -44,14 +37,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar>
+
         <AppBar
           className='app-bar'
           title='SquadBox'
           onLeftIconButtonClick={() => this.toggleDrawerMenu()}
           zDepth={2}
         />
-          </NavBar>
+
         <Drawer
           docked={false}
           width={200}

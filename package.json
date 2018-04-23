@@ -9,6 +9,7 @@
     "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "dependencies": {
+    "material-ui": "^0.20.0",
     "semantic-ui-react": "^0.79.1",
     "styled-components": "^3.2.6"
   }
