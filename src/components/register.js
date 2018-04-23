@@ -67,8 +67,8 @@ class Register extends Component {
             subject_id: this.state.username
         }, {
                 headers: {
-                    app_id: <enter app id here>,
-                    app_key: <enter app key here>
+                    app_id: 'e70fee1f',
+                    app_key: '98112e824f82622206d370dae6ed74b9'
                 }
             }).then((response) => {
                 console.log(response);
@@ -89,8 +89,8 @@ class Register extends Component {
             gallery_name: "newCameriaGallery"
         }, {
                 headers: {
-                    app_id: <enter app id here>,
-                    app_key: <enter app key here>
+                    app_id: 'e70fee1f',
+                    app_key: '98112e824f82622206d370dae6ed74b9'
                 }
             }).then((response) => {
                 alert('Gallery has been reset. Feel free to register now');
