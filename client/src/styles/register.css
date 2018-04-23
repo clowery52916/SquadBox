@@ -35,7 +35,7 @@
 }
 
 h3 {
-    font-family: Helvetica;
+    font-family: FiraCode;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ h3 {
         top: -9834px!important;
         left: -9916px!important;
     }
-    
+
     .subject-id {
         right: 56px!important;
         top: 434px;
@@ -54,7 +54,7 @@ h3 {
     .register-button {
         margin-top: -6px!important;
     }
-}   
+}
 
 /* middle-sized devices queries */
 @media (max-width: 800px) and (min-width: 750px) {

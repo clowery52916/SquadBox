@@ -5,12 +5,20 @@ import './App.css';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
+import styled from 'styled-components'
 
 import { Route, Switch, Link } from 'react-router-dom';
 
 import LandingPage from './components/landing-page';
 import Recognize from './components/recognize';
 import Register from './components/register';
+
+const NavBar = styled.div`
+  background-color: rgb(161, 214, 188);,
+  AppBar{
+    background-color:black;
+  }
+`
 
 class App extends Component {
   constructor(props) {
@@ -36,12 +44,14 @@ class App extends Component {
   render() {
     return (
       <div>
+        <NavBar>
         <AppBar
           className='app-bar'
-          title='CAMERIA'
+          title='SquadBox'
           onLeftIconButtonClick={() => this.toggleDrawerMenu()}
           zDepth={2}
         />
+          </NavBar>
         <Drawer
           docked={false}
           width={200}
@@ -59,6 +69,7 @@ class App extends Component {
           <Route path='/register' render={(props) => <Register {...props} />} />
           <Route path='**' render={(props) => <LandingPage {...props} />} />
         </Switch>
+
       </div>
     );
   }
