@@ -36,4 +36,3 @@ class Api::UsersController < ApplicationController
     params.require(:user).permit(:name, :photo, :password, :email, :age, :post, :comment)
   end
 end
-end

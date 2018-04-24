@@ -21,7 +21,7 @@ class LandingPage extends Component {
             <Grid fluid>
                 <Row>
                     <Col xs={12} md={12} style={{ 'textAlign': 'center' }}>
-                        <h3>Squad Goals</h3>
+                        <h3>Squad Box</h3>
                         <br />
                         <p><b>Real People. Real Life. Real Safe</b></p>
                         <br />
@@ -58,11 +58,30 @@ class LandingPage extends Component {
                                 <Link to={'/register'}><FlatButton className='flat-btn' label="Sign Up" /></Link>
                             </CardActions>
                         </Card>
-                        <SemanticGrid/>
+
 
                     </Col>
+                    <Col xs={12} md={3} style={{ 'textAlign': 'center' }}>
+                        <Card>
+                            <CardMedia
+                            >
+                            </CardMedia>
+                            <CardTitle title="News Feed" />
+                            <CardText>
+                            </CardText>
+                            <CardActions>
+                                <Link to={'/users'}><FlatButton className='flat-btn' label="News Feed" /></Link>
+                            </CardActions>
+                        </Card>
+
+
+                    </Col>
+
                 </Row>
+                  <SemanticGrid/>
             </Grid>
+
+
         );
     }
 }

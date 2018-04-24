@@ -35,5 +35,3 @@ class Api::CommentsController < ApplicationController
     params.require(:comment).permit(:user, :post, :comment_body, :like)
   end
 end
-
-end

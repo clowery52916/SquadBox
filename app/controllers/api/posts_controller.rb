@@ -36,5 +36,3 @@ class Api::PostsController < ApplicationController
     params.require(:post).permit(:user_id, :post_body, :like)
   end
 end
-
-end
