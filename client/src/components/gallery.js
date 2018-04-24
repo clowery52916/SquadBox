@@ -34,7 +34,7 @@ class Gallery extends Component {
             <Grid fluid>
                 <Row>
                     <Col xs={12} md={12} style={{ textAlign: 'center' }}>
-                        <h3>House of Black and White</h3>
+                        <h3>Blah Blah</h3>
                     </Col>
                 </Row>
                 <Row>

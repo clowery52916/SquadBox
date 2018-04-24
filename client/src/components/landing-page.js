@@ -42,7 +42,7 @@ class LandingPage extends Component {
                             </CardText>
 
                             <CardActions>
-                                <Link to={'/recognize'}><FlatButton className='flat-btn' label="RECOGNIZE" /></Link>
+                                <Link to={'/recognize'}><FlatButton className='flat-btn' label="Login In" /></Link>
                             </CardActions>
                         </Card>
                     </Col>
@@ -55,7 +55,7 @@ class LandingPage extends Component {
                             <CardText>
                             </CardText>
                             <CardActions>
-                                <Link to={'/register'}><FlatButton className='flat-btn' label="REGISTER" /></Link>
+                                <Link to={'/register'}><FlatButton className='flat-btn' label="Sign Up" /></Link>
                             </CardActions>
                         </Card>
                         <SemanticGrid/>
