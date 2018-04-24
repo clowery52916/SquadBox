@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class UserRegister extends Component {
     render() {
         if (this.props.detect.message === 'error') {
-            return (<p><b>Face not in the frame.</b> Please try again by occupying the frame.</p>);
+            return (<p><b>Your face isn't adjusted quiet right, please adjust so your face is centered.</b> Please try again</p>);
         } else if (this.props.detect.message === 'failure') {
             return (<p><b>Registration failed</b><br />Please try again.</p>);
         } else if (this.props.detect.message === 'success') {

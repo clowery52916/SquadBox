@@ -6,13 +6,13 @@ class UserConfirmData extends Component {
 
         if (!this.props.user.data) {
             return (
-                <p>Register your face with us</p>
+                <p>Sign up with your face! Your age lets you in! No parents aloud!</p>
             );
         }
 
         return (
             <div className='userData'>
-                <p>User successfully registered</p>
+                <p>You're in! Face has been saved!</p>
             </div>
         );
     }

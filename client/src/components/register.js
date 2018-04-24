@@ -112,7 +112,7 @@ class Register extends Component {
                 <Row>
                     <Col xs={12} md={4} mdOffset={4}>
                         <div style={{ 'textAlign': 'center' }}>
-                            <h3>REGISTER FACE</h3>
+                            <h3>Sign Up your Face!</h3>
                             <Webcam
                                 audio={false}
                                 height={320}

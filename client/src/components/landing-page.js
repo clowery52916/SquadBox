@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/register.css';
+import SemanticGrid from './SemanticGrid'
 
 // images being used
-import detectImg from '../assets/images/detect-img.jpg';
-import registerImg from '../assets/images/register-img.jpg';
-import galleryImg from '../assets/images/gallery-img.jpg';
+// import detectImg from '../assets/images/detect-img.jpg';
+// import registerImg from '../assets/images/register-img.jpg';
+// import galleryImg from '../assets/images/gallery-img.jpg';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
@@ -20,11 +21,11 @@ class LandingPage extends Component {
             <Grid fluid>
                 <Row>
                     <Col xs={12} md={12} style={{ 'textAlign': 'center' }}>
-                        <h1>YOUR FACE IS YOUR IDENTITY</h1>
+                        <h3>Squad Goals</h3>
                         <br />
-                        <p>This application allows the user to capture an image and use facial recognition to recognize the face whose data has been captured</p>
-                        <p><b>Register. Detect. Check.</b></p>
+                        <p><b>Real People. Real Life. Real Safe</b></p>
                         <br />
+
                     </Col>
                 </Row>
                 <Row>
@@ -35,11 +36,11 @@ class LandingPage extends Component {
                         <Card>
                             <CardMedia
                             >
-                                <img className='landingImage' src={detectImg} alt="detect" />
                             </CardMedia>
                             <CardTitle title="Recognize Face" />
                             <CardText>
                             </CardText>
+
                             <CardActions>
                                 <Link to={'/recognize'}><FlatButton className='flat-btn' label="RECOGNIZE" /></Link>
                             </CardActions>
@@ -49,7 +50,6 @@ class LandingPage extends Component {
                         <Card>
                             <CardMedia
                             >
-                                <img className='landingImage' src={registerImg} alt="register" />
                             </CardMedia>
                             <CardTitle title="Register Face" />
                             <CardText>
@@ -58,6 +58,8 @@ class LandingPage extends Component {
                                 <Link to={'/register'}><FlatButton className='flat-btn' label="REGISTER" /></Link>
                             </CardActions>
                         </Card>
+                        <SemanticGrid/>
+
                     </Col>
                 </Row>
             </Grid>

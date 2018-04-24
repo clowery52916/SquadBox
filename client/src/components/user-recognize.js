@@ -10,8 +10,8 @@ class UserRecognize extends Component {
         } else if (this.props.detect.message === 'success') {
             return (
                 <div>
-                    <p><b>Profile name: </b>{this.props.detect.name}</p>
-                    <p><b>Face ID: </b>{this.props.detect.faceID}</p>
+                    <p><b>Welcome Back </b>{this.props.detect.name}</p>
+                    <p><b>: </b>{this.props.detect.faceID}</p>
                 </div>);
         } else {
             return <p><b>RECOGNITION STATUS</b> WILL BE DISPLAYED HERE</p>
