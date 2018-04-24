@@ -6,6 +6,7 @@ export default (state = {}, action) => {
             let finalData = {
                 name: '',
                 faceID: '',
+                age:'',
                 message: ''
             };
 

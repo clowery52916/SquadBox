@@ -11,7 +11,8 @@ class UserRecognize extends Component {
             return (
                 <div>
                     <p><b>Welcome Back </b>{this.props.detect.name}</p>
-                    <p><b>: </b>{this.props.detect.faceID}</p>
+                    <p><b>face Id: </b>{this.props.detect.faceID}</p>
+                    <p><b>age: </b>{this.props.detect.age}</p>
                 </div>);
         } else {
             return <p><b>RECOGNITION STATUS</b> WILL BE DISPLAYED HERE</p>
